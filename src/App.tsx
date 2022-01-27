@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Note } from './models/note.model';
-import Header from './components/Header';
+import Header from './components/Header/Header';
 
 function App() {
   const [notes, setNotes] = useState<Note[]>([{
@@ -14,9 +14,11 @@ function App() {
     }])
 
   return (
-    <div className="App">
+    <>
+      <div className="App">
         <Header/>
     </div>
+    </>
   );
 }
 
