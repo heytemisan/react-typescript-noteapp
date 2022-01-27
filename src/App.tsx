@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Note } from './models/note.model';
 import Header from './components/Header/Header';
+import NoteList from './components/NoteList/NoteList';
 
 function App() {
   const [notes, setNotes] = useState<Note[]>([{
@@ -16,7 +17,8 @@ function App() {
   return (
     <>
       <div className="App">
-        <Header/>
+        <Header />
+        <NoteList notes={notes}/>
     </div>
     </>
   );
