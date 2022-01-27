@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './Header.css'
 
 interface IHeaderProps {
 }
@@ -6,8 +7,8 @@ interface IHeaderProps {
 const Header: React.FunctionComponent<IHeaderProps> = (props) => {
     return (
         <nav>
-            <div>
-                 Note App
+            <div className='header'>
+                Note App
             </div>
         </nav>
     );

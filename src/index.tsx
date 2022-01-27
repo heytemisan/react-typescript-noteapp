@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/kirifont" type="text/css"/> 
 
 ReactDOM.render(
   <React.StrictMode>
