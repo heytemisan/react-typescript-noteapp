@@ -18,7 +18,7 @@ function App() {
     <>
       <div className="App">
         <Header />
-        <NoteList notes={notes}/>
+        <NoteList notes={notes} setNotes={ setNotes}/>
     </div>
     </>
   );
