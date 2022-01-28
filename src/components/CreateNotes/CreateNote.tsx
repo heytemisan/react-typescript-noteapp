@@ -25,11 +25,15 @@ const CreateNotes: React.FunctionComponent<ICreateNotesProps> = ({notes, setNote
             text: (textRef.current as HTMLTextAreaElement).value,
             color: (colorRef.current as HTMLInputElement).value,
             date: (new Date()).toString()
-        }])
+        }]);
+
+        (titleRef.current as HTMLInputElement).value = "";
+        (titleRef.current as HTMLInputElement).value = "";
     }
     return (
         <>
             <h2>Create Notes</h2>
+            {error && <div>{ error}</div>}
             <form onSubmit={e => handleSubmit(e)}>
                 <div className="form-input">
                     <label htmlFor="title">title</label>
