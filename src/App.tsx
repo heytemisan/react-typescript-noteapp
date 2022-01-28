@@ -12,7 +12,7 @@ function App() {
     id: (new Date).toString(),
     title: "meetings",
     text: "hello to the teams",
-    color: "#C1C1C1",
+    color: "#FCF17D",
     date:(new Date).toString()
     }])
 

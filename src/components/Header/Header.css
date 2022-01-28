@@ -14,3 +14,14 @@ nav {
     text-shadow: 0 2px 0 rgba(0, 0, 0, 0.28);
     cursor: pointer;
 }
+
+@media screen and (max-width:700px) {
+
+    nav {
+        height: auto;
+    }
+
+    .header {
+        font-size:3rem;
+    }
+}

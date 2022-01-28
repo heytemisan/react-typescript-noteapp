@@ -113,3 +113,32 @@ textarea:-webkit-autofill:active{
     cursor: pointer;
 }
 
+@media screen and (max-width:700px) {
+    .title {
+        padding: 3px;
+        margin-bottom: 70px;
+    }
+    
+    .color-bg {
+        border: 2px solid black;
+        padding: 8px;
+        border-radius: 34% 10% 11% 22% / 40% 24% 19% 15%;
+    }
+    
+    .message{
+        padding:30px;
+        margin-bottom: 70px;
+    }
+
+    .submit-btn {
+        padding:20px;
+        border-radius: 34% 24% 20% 22% / 15% 22% 19% 24% ;
+        background-color: black;
+        color: white;
+        font-size: 1.3rem;
+        border:none;
+        font-family: inherit;
+        cursor: pointer;
+    }
+    
+}
