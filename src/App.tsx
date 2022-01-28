@@ -4,6 +4,7 @@ import './App.css';
 import { Note } from './models/note.model';
 import Header from './components/Header/Header';
 import NoteList from './components/NoteList/NoteList';
+import CreateNotes from './components/CreateNotes/CreateNote';
 
 function App() {
   const [notes, setNotes] = useState<Note[]>([{
@@ -18,7 +19,8 @@ function App() {
     <>
       <div className="App">
         <Header />
-        <NoteList notes={notes} setNotes={ setNotes}/>
+        <NoteList notes={notes} setNotes={setNotes} />
+        <CreateNotes notes={notes} setNotes={setNotes} />
     </div>
     </>
   );
