@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { Note } from './models/note.model';
 import Header from './components/Header/Header';
@@ -9,11 +8,11 @@ import { Footer } from './components/Footer/Footer';
 
 function App() {
   const [notes, setNotes] = useState<Note[]>([{
-    id: (new Date).toString(),
+    id: (new Date()).toString(), 
     title: "meetings",
     text: "hello to the teams",
     color: "#FCF17D",
-    date:(new Date).toString()
+    date:(new Date()).toString()
     }])
 
   return (
