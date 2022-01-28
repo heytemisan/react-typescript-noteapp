@@ -5,6 +5,7 @@ import { Note } from './models/note.model';
 import Header from './components/Header/Header';
 import NoteList from './components/NoteList/NoteList';
 import CreateNotes from './components/CreateNotes/CreateNote';
+import { Footer } from './components/Footer/Footer';
 
 function App() {
   const [notes, setNotes] = useState<Note[]>([{
@@ -21,6 +22,7 @@ function App() {
         <Header />
         <NoteList notes={notes} setNotes={setNotes} />
         <CreateNotes notes={notes} setNotes={setNotes} />
+        <Footer/>
     </div>
     </>
   );

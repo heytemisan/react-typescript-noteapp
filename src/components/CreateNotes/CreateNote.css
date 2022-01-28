@@ -2,6 +2,7 @@
     background:linear-gradient(90deg,  #FCF17D, #FCF156);
     margin-top: 30px;
     line-height: 40px;
+    padding-bottom:50px
 }
 
 .form h2 {
@@ -14,6 +15,7 @@
 .error {
     background-color: #BE0137;
     text-align: center;
+    margin: 25px;
 }
 
 .form-input {
@@ -70,7 +72,6 @@ textarea:-webkit-autofill:active{
     border:2px solid black;
     padding: 30px;
     border-radius:34% 10% 11% 22% / 40% 24% 19% 15%  ;
-    margin-bottom: 70px;
 }
 
 .color-pallete {
@@ -99,5 +100,16 @@ textarea:-webkit-autofill:active{
     outline:none;
     background-color:transparent;
     color: grey;
+}
+
+.submit-btn {
+    padding:40px;
+    border-radius: 34% 24% 20% 22% / 15% 22% 19% 24% ;
+    background-color: black;
+    color: white;
+    font-size: 1.3rem;
+    border:none;
+    font-family: inherit;
+    cursor: pointer;
 }
 

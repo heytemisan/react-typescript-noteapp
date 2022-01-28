@@ -46,7 +46,7 @@ const CreateNotes: React.FunctionComponent<ICreateNotesProps> = ({notes, setNote
                 </div>
                 <div className="color-pallete" >
                     <div className="color-bg">
-                         <label className='label' htmlFor="colorInput">Notes Color</label>
+                        <label className='label' htmlFor="colorInput">Notes Color</label>
                     <input  type="color"placeholder='enter color for the note' id="colorInput" defaultValue="#dfdfdf" ref={colorRef}/>
                     </div>
                 <button type="submit" className='submit-btn'>
