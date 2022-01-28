@@ -1,0 +1,103 @@
+.form {
+    background:linear-gradient(90deg,  #FCF17D, #FCF156);
+    margin-top: 30px;
+    line-height: 40px;
+}
+
+.form h2 {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 3rem;
+    padding-bottom: 30px;
+}
+
+.error {
+    background-color: #BE0137;
+    text-align: center;
+}
+
+.form-input {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: auto;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover, 
+textarea:-webkit-autofill:focus, 
+textarea:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+
+
+.input::placeholder {
+    background:linear-gradient(90deg,  #FCF17D, #FCF156);
+}
+
+.input:active {
+    background:linear-gradient(90deg,  #FCF17D, #FCF156);
+}
+
+.input:focus, .input:active {
+    background: transparent;
+}
+
+.title {
+    border:2px solid black;
+    padding: 30px;
+    border-radius: 38% 35% 20% 22% / 10% 10% 19% 15% ;
+    margin-bottom: 70px;
+}
+
+
+.message{
+    border:2px solid black;
+    padding: 30px;
+    border-radius: 34% 10% 20% 22% / 10% 11% 19% 15%  ;
+    margin-bottom: 70px;
+}
+
+.color-bg {
+    border:2px solid black;
+    padding: 30px;
+    border-radius:34% 10% 11% 22% / 40% 24% 19% 15%  ;
+    margin-bottom: 70px;
+}
+
+.color-pallete {
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.label{
+    margin-right:30px
+}
+
+.form-label {
+    width: 20%;
+    font-size: 2rem; 
+}
+
+.input {
+    width: 70%;
+    font-size: 1.5rem;
+    border:none;
+    outline:none;
+    background-color:transparent;
+    color: grey;
+}
+

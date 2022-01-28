@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Note } from '../../models/note.model';
+import "./CreateNote.css"
 
 interface ICreateNotesProps {
     notes: Note[],
@@ -31,27 +32,29 @@ const CreateNotes: React.FunctionComponent<ICreateNotesProps> = ({notes, setNote
         (titleRef.current as HTMLInputElement).value = "";
     }
     return (
-        <>
+        <div className="form"> 
             <h2>Create Notes</h2>
-            {error && <div>{ error}</div>}
+            {error && <div className="error">{ error}</div>}
             <form onSubmit={e => handleSubmit(e)}>
-                <div className="form-input">
-                    <label htmlFor="title">title</label>
-                    <input type="text" placeholder='enter title for the note' ref={ titleRef}/>
+                <div className="form-input title">
+                    <label className="form-label" htmlFor="title">Title</label>
+                    <input className='input form-control' type="text" placeholder='enter title for the note' ref={ titleRef}/>
                 </div>
-                <div className="form-input">
-                    <label htmlFor="title">Text</label>
-                    <textarea name="textarea" id="" cols={30} rows={10 } placeholder='enter your note' ref={textRef}></textarea>
+                <div className="form-input message">
+                    <label className="form-label"  htmlFor="title">Text</label>
+                    <textarea className='input' name="textarea" id="" cols={30} rows={10 } placeholder='enter your note' ref={textRef}></textarea>
                 </div>
-                <div className="form-input">
-                    <label htmlFor="colorInput">Notes Color</label>
-                    <input type="color"placeholder='enter color for the note' id="colorInput" defaultValue="#dfdfdf" ref={colorRef}/>
-                </div>
-                <button type="submit">
+                <div className="color-pallete" >
+                    <div className="color-bg">
+                         <label className='label' htmlFor="colorInput">Notes Color</label>
+                    <input  type="color"placeholder='enter color for the note' id="colorInput" defaultValue="#dfdfdf" ref={colorRef}/>
+                    </div>
+                <button type="submit" className='submit-btn'>
                     submit
                 </button>
+                </div>
             </form>
-        </>
+        </div>
     );
 };
 

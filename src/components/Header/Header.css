@@ -1,18 +1,16 @@
 nav {
-    background:linear-gradient(90deg, #66ccff, #0099e6);
-    height: 20vh;
-    color: antiquewhite;
-    font-family: 'KiriFontNormal', roboto, sans-serif; 
+    background:linear-gradient(90deg,  #FCF17D, #FCF156);
+    height: 40vh;
+    color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .header {
-    font-size: 3em;
+    font-size: 7.5em;
     line-height: 2.5em;
     font-weight: 500;
     text-shadow: 0 2px 0 rgba(0, 0, 0, 0.28);
     cursor: pointer;
-    position: fixed;
 }

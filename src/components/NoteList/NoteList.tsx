@@ -21,7 +21,7 @@ const NoteList: React.FC<INoteListProps> = ({ notes, setNotes }) => {
         <>
             <div className="notes">
                 <h2>Notes</h2>
-                <div>{renderNotes()}</div>
+                <div className="notes_list">{renderNotes()}</div>
             </div>
         </> 
     ) ;
